@@ -16,17 +16,15 @@ measure, a set of predicted plagiarized pairs are returned.
 * Fully documented code.
 
 ## How to run
-1. Clone this repo / click "Download as Zip" and extract the files.
-2. Ensure Python 3.7 is installed, and in your system `PATH`.
-3. Install pipenv using `pip install -U pipenv`.
-4. In the project folder, run `pipenv install` to install all python dependencies.
-5. Generate the shingle-document matrix by running: `pipenv run python matrix.py`. Matrix will be stored in **shingles_matrix.csv**.
-6. To create the signature matrix:
+1. Install pipenv using `pip install -U pipenv`.
+2. In the project folder, run `pipenv install` to install all python dependencies.
+3. Generate the shingle-document matrix by running: `pipenv run python matrix.py`. Matrix will be stored in **shingles_matrix.csv**.
+4. To create the signature matrix:
 	1. Jaccard distance: `pipenv run python jaccard_sig.py`.
 		Signature matrix stores in **jaccard_signatures.csv**.
 	2. Cosine distance: `pipenv run python cosine_sig.py`.
 		Signature matrix stores in **cosine_signatures.csv**.
 	3. Hamming distance: `pipenv run python hamming_sig.py`.
 		Signature matrix stores in **hamming_signatures.csv**.
-7. To run the LSH algorithm: `pipenv run python main.py`.
+5. To run the LSH algorithm: `pipenv run python main.py`.
 	
